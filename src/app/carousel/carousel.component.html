@@ -1,48 +1,20 @@
 <div class="">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
     <!-- Indicators -->
     <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel"    *ngFor="let image of images let index = index" [class.active]="index == 0"  [attr.data-slide-to]=index></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img class="responsive" src="../assets/images/image1.jpg" alt="image">
+      <div class="item" *ngFor="let image of images let index = index" [class.active]="index == 0">
+        <img class="responsive" src="{{image.path}}" alt="image">
         <div class="carousel-caption">
-          <h3>Image Slides</h3>
-          <p>The carousel image slides!</p>
+          <h3>{{image.caption}}</h3>
+          <p>The carousel image slides! {{index }}</p>
         </div>
       </div>
-
-      <div class="item">
-        <img class="responsive" src="../assets//images/image2.jpg" alt="image">
-        <div class="carousel-caption">
-          <h3>Image Slides</h3>
-          <p>The carousel image slides!</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img class="responsive" src="../assets/images/image3.jpg" alt="image" >
-        <div class="carousel-caption">
-          <h3>Slideshow</h3>
-          <p>The carousel image slides!</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img class="responsive" src="../assets/images/image4.jpg" alt="image">
-        <div class="carousel-caption">
-          <h3>Slideshow</h3>
-          <p>The carousel image slides!</p>
-        </div>
-      </div>
-
     </div>
 
     <!-- Left and right controls -->

@@ -30,6 +30,13 @@ a.danger {
 input.ng-invalid.ng-touched {
   border: 1px solid red;
 }
+table{
+  width:100%;
+  table-layout: fixed;
+}
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
 
 @media only screen and (min-width: 768px) and (max-width:1200px){
     /* tablets and desktop */

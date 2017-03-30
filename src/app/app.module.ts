@@ -11,6 +11,8 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
 import { AuthComponent } from './auth/auth.component';
 import { CarouselSettingsComponent } from './settings/carousel-settings.component';
 import { AgendaSettingsComponent } from './settings/agenda-settings.component';
+import { RoutingComponent } from './app.routing';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { AgendaSettingsComponent } from './settings/agenda-settings.component';
     FileUploadComponent,
     AuthComponent,
     CarouselSettingsComponent,
-    AgendaSettingsComponent
+    AgendaSettingsComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RoutingComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
