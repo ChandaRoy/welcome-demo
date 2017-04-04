@@ -10,14 +10,14 @@
         </tr>
         <tr *ngFor="let image of images">
           <td><img src="{{image.path}}" alt="" style="max-height:20px;max-width:20px"></td>
-          <td>{{image.caption}}</td>
-          <td>{{image.details}}</td>
+          <td contenteditable="true">{{image.caption}}</td>
+          <td contenteditable="true">{{image.details}}</td>
           <td><i class="fa fa-close" style="color:red"></i></td>
         </tr>
       </table>
     </div>
     <div class="col-sm-6" style="height:20rem">
-      <file-upload-component></file-upload-component>
+    
     </div>
   </div>
 

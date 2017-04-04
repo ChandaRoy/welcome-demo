@@ -13,6 +13,7 @@ import { CarouselSettingsComponent } from './settings/carousel-settings.componen
 import { AgendaSettingsComponent } from './settings/agenda-settings.component';
 import { RoutingComponent } from './app.routing';
 import { IndexComponent } from './index/index.component';
+import { EditorComponent } from './editor/editor.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { IndexComponent } from './index/index.component';
     AuthComponent,
     CarouselSettingsComponent,
     AgendaSettingsComponent,
-    IndexComponent
+    IndexComponent,
+    EditorComponent
   ],
   imports: [
     BrowserModule,

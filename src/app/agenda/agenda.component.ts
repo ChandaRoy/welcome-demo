@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { EditorComponent} from '../editor/editor.component';
 
 @Component({
   selector: 'agenda-component',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./agenda.component.css']
 })
 export class AgendaComponent implements OnInit {
+
 
   constructor() { }
 
